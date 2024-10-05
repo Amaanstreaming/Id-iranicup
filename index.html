@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amaan Player M3U8 </title>
+    <script src="https://cdn.jwplayer.com/libraries/your-jwplayer-key.js"></script>
+    <style>
+        #myPlayer {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="Amaan Player"></div>
+
+<script>
+    const playerInstance = jwplayer("Amaan stream").setup({
+        file: "https://prod-sports-eng-cf.jiocinema.com/hls/live/2100299/hd_akamai_androidmob_avc_eng_indvsban_280924/master.m3u8", // Replace with your M3U8 URL
+        width: "100%",
+        height: "400",
+        autostart: false,
+        // Additional parameters can be added here
+        // Example: 
+        // advertising: {
+        //     client: "vast",
+        //     tag: "https://example.com/vast.xml"
+        // }
+    });
+
+    // Optional: Add event listeners
+    playerInstance.on('ready', function() {
+        console.log('Player is ready');
+    });
+
+    playerInstance.on('error', function(event) {
+        console.error('Error occurred:', event);
+    });
+</script>
+
+</body>
+</html>
+<script>
+if(confirm("Join Our Telegram Channel @Tushar_stream For More Links")) { window.location.href = "https://telegram.me/Tushar_stream" }
+  </script>
